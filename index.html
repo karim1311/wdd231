@@ -8,10 +8,16 @@
     <meta name="author" content="Karim Valenzuela">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/homepage.css">
+    <script src="/scripts/navigations.js" defer></script>
+    <script src="./scripts/course.js" defer></script>
+    <script src="/scripts/date.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Karim Valenzuela</h1>
+        <div class="img-name">
+            <img src="/images/karimvalenzuela202311.jpeg" alt="">
+            <h1>Karim Valenzuela</h1>
+        </div>
         <a id="menu" href="#"></a>
         <nav>
             <ul class="navigation">
@@ -22,13 +28,40 @@
             </ul>
         </nav>
     </header>
-
+    <h1 class="home">Home</h1>
     <main>
+        <section class="border">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </section>
+        <section class="border">
+            <h2>Sinaloa, México</h2>
+            <img src="./images/Parquelasriberas.webp" alt="Parque Las Riberas">
+            <p>Parque Las Riberas</p>
+        </section>
+
+        <div class="certificate border">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filters">
+                <a href="#" id="all">All</a>
+                <a href="#" id="cse">CSE</a>
+                <a href="#" id="wdd">WDD</a>
+            </div>
+            <div class="container">
+
+            </div>
+        </div>
 
     </main>
 
     <footer>
-
+        <p><span id="currentyear"></span> Karim Valenzuela Sinaloa, México.</p>
+        <p id="lastModified"></p>
     </footer>
     
 </body>
