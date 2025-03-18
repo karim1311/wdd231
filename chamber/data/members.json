@@ -1,0 +1,60 @@
+{
+    "companies": [
+        {
+            "name" : "Tacos el Guero",
+            "address" : "Teófilo Noris #10 8000, Colonia Centro, Culiacán",
+            "phone" : "6671-250-2450",
+            "websiteurl" : "lostacosdelguero.com",
+            "iconfilename" : "",
+            "membershiplevel" : 1
+        },
+        {
+            "name" : "Churrocakes",
+            "address" : " Blvrd Pedro Anaya 1151, Chapultepec, 80040 Culiacán",
+            "phone" : "6671057835",
+            "websiteurl" : "https://www.instagram.com/churrocakes.mx/?hl=es",
+            "iconfilename" : "/images/churrocake.jpg",
+            "membershiplevel" : 3
+        },
+        {
+            "name" : "big company",
+            "address" : "",
+            "phone" : "",
+            "websiteurl" : "",
+            "iconfilename" : "",
+            "membershiplevel" : ""
+        },
+        {
+            "name" : "big company",
+            "address" : "",
+            "phone" : "",
+            "websiteurl" : "",
+            "iconfilename" : "",
+            "membershiplevel" : ""
+        },
+        {
+            "name" : "big company",
+            "address" : "",
+            "phone" : "",
+            "websiteurl" : "",
+            "iconfilename" : "",
+            "membershiplevel" : ""
+        },
+        {
+            "name" : "big company",
+            "address" : "",
+            "phone" : "",
+            "websiteurl" : "",
+            "iconfilename" : "",
+            "membershiplevel" : ""
+        },
+        {
+            "name" : "big company",
+            "address" : "",
+            "phone" : "",
+            "websiteurl" : "",
+            "iconfilename" : "",
+            "membershiplevel" : ""
+        }
+    ]
+}
