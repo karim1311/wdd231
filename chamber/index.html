@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce Directory Page</title>
+    <title>Chamber Home Page</title>
     <meta name="description" content="Chamber of commerce Directory">
     <meta name="author" content="Karim Valenzuela">
     <meta property="og:title" content="WDD231 Chamber of Commerce">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/script.js" defer></script>
-    <script src="scripts/cards.js" defer></script>
+    <!-- <script src="scripts/cards.js" defer></script> -->
 </head>
 <body>
     <header>
@@ -28,26 +28,52 @@
 
     <nav id="animateme">
         <ul class="menuLinks">
-            <li><a href="./index.html" title="Home">Home</a></li>
+            <li><a href="#" title="Home">Home</a></li>
             <li class="current-menu-item"><a href="./directory.html">Directory</a></li>
             <li><a href="#" title="Service">Page Three</a></li>
             <li><a href="#" title="History">Page Four</a></li>
+            <li class=""><a href="" class="join-now-btn">Join now</a></li>
+            <!-- <button class="hero-text join-now-btn">Join Now</button> -->
         </ul>
     </nav>
 
-
     <main>
-        <h1>Page Two</h1>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Your business grows here.</h1>
+                <p>Culiacan Chamber of Commerce offers network, increased visibility, workshops, market data and many more.</p>
+                <button class="join-now-btn">Join Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="./images/antenna-cw-cj_nFa14-unsplash.jpg" alt="" class="hero-img">
+            </div>
 
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
+        </section>
 
-        <article class="grid" id="cards">
+        <h1>Home</h1>
 
-        </article>
-
+        <section class="grid">
+            <div class="events">
+                <h2>Events</h2>
+            </div>
+            <div class="weather">
+                <h2>Current Weather</h2>
+                <img src="" alt="" class="weather-icon">
+                <p>image here</p>
+                <p>weather description</p>
+                <p>high</p>
+                <p>low</p>
+                <p>humidity</p>
+                <p>sunrise</p>
+                <p>sunset</p>
+            </div>
+            <div class="">
+                <h2>Weather Forecast</h2>
+                <p>today</p>
+                <p>wednesday</p>
+                <p>thursday</p>
+            </div>
+        </section>
 
     </main>
 

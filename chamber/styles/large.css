@@ -15,4 +15,26 @@
     nav{
         grid-template-rows: 1fr;
     }
+
+    /* main */
+   main{
+    /* display: grid; */
+    grid-template-columns: 1.25fr .75fr;
+   }
+
+   .border{
+    border-radius: 8px;
+    box-shadow: 0 0 1.5rem #333;
+
+   }
+
+   .certificate{
+    grid-column: 1/3;
+    background-color: #fff;
+   }
+
+   .container{
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+
 }
