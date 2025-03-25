@@ -260,7 +260,7 @@ img{
 
 
 /* EVENTS AND WEATHER STYLES  */
-.grid{
+.card-h{
     display: grid;
     width: 95%;
     margin: 1rem auto;
@@ -269,13 +269,21 @@ img{
     grid-gap: 1rem;
 }
 
-.grid > div {
-    padding-top: 0;
-    text-align: center;
+#card-h {
+    background-color: #fff;
+    border: none;
 }
 
-h2{
+.card-h > div {
+    padding-top: 0;
+    text-align: center;
+    height: auto;
+    background-color: #eee;
+}
+
+.cards-header{
     background-color: #1d3557;
     color: #fff;
-    border-radius: .5rem .5rem 0rem 0rem;
+    width: 100%;
 }
+

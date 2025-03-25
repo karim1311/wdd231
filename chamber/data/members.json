@@ -4,7 +4,7 @@
             "name" : "Tacos el Guero",
             "address" : "Teófilo Noris #321 8000, Colonia Centro, Culiacán",
             "phone" : "667-125-0450",
-            "websiteurl" : "https://www.facebook.com/TacosElGueroCLN",
+            "websiteurl" : "facebook.com/TacosElGueroCLN",
             "iconfilename" : "./images/tacoselguero.webp",
             "membershiplevel" : 1
         },
@@ -12,23 +12,23 @@
             "name" : "Churrocakes",
             "address" : " Blvrd Pedro Anaya 1151, Chapultepec, 80040 Culiacán",
             "phone" : "667-105-7835",
-            "websiteurl" : "https://www.instagram.com/churrocakes.mx/?hl=es",
+            "websiteurl" : "instagram.com/churrocakes.mx/?hl=es",
             "iconfilename" : "./images/churrocakeicon.jpg",
-            "membershiplevel" : 3
+            "membershiplevel" : 2
         },
         {
             "name" : "Benja Sushi",
             "address" : "Home Delivery in Culiacán",
             "phone" : "667-293-0343",
-            "websiteurl" : "https://www.instagram.com/benjasushi/",
+            "websiteurl" : "instagram.com/benjasushi",
             "iconfilename" : "./images/sushilogo.webp",
-            "membershiplevel" : 2
+            "membershiplevel" : 1
         },
         {
             "name" : "Yokozuna Ramen",
             "address" : "Boulevard Enrique Sánchez Alonso 2083, 80034 Culiacán",
             "phone" : "667 350 9000",
-            "websiteurl" : "https://yokozunaramen.com.mx/",
+            "websiteurl" : "yokozunaramen.com.mx",
             "iconfilename" : "./images/yokozunaramen.webp",
             "membershiplevel" : 2
         },
@@ -36,7 +36,7 @@
             "name" : "Guevara Real Estate",
             "address" : "Villa Universidad, Culiacán",
             "phone" : "667 139 2516",
-            "websiteurl" : "https://www.facebook.com/profile.php?id=61560359017777&locale=es_LA",
+            "websiteurl" : "facebook.com/profile.php?id=61560359017777&locale=es_LA",
             "iconfilename" : "./images/guevarabien.webp",
             "membershiplevel" : 1
         },
@@ -44,7 +44,7 @@
             "name" : "Casa Ley",
             "address" : "Calzada José Limón #2031 col. Infonavit Humaya CP 80020, Culiacán ",
             "phone" : " 667 759 10 00",
-            "websiteurl" : "https://www.casaley.com.mx/",
+            "websiteurl" : "casaley.com.mx",
             "iconfilename" : "./images/CASALEY.webp",
             "membershiplevel" : 3
         },
@@ -52,7 +52,7 @@
             "name" : "Grupo Panamá",
             "address" : "Centro Culiacan",
             "phone" : "667 503 6588",
-            "websiteurl" : "https://panama.com.mx/",
+            "websiteurl" : "panama.com.mx",
             "iconfilename" : "./images/panama.webp",
             "membershiplevel" : 3
         }

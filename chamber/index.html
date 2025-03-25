@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/script.js" defer></script>
-    <!-- <script src="scripts/cards.js" defer></script> -->
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </head>
 <body>
     <header>
@@ -52,28 +53,34 @@
 
         <h1>Home</h1>
 
-        <section class="grid">
+        <section class="card-h" id="card-h">
             <div class="events">
-                <h2>Events</h2>
+                <h2 class="cards-header">Events</h2>
+                <p>This is a workshop we will have!</p>
             </div>
-            <div class="weather">
-                <h2>Current Weather</h2>
+            <div class="cweather">
+                <h2 class="cards-header">Current Weather</h2>
+                <span id="current-temp"></span>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <p id="highest-temp"></p>
+                <p id="lowest-temp"></p>
+                <p id="humidity"></p>
+                <p id="sunrise"></p>
+                <p id="sunset"></p>
                 <img src="" alt="" class="weather-icon">
-                <p>image here</p>
-                <p>weather description</p>
-                <p>high</p>
-                <p>low</p>
-                <p>humidity</p>
-                <p>sunrise</p>
-                <p>sunset</p>
             </div>
-            <div class="">
-                <h2>Weather Forecast</h2>
-                <p>today</p>
-                <p>wednesday</p>
-                <p>thursday</p>
+            <div class="forecast">
+                <h2 class="cards-header">Weather Forecast</h2>
+                
             </div>
         </section>
+
+        <article class="grid" id="cards">
+
+        </article>
 
     </main>
 

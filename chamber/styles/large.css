@@ -33,8 +33,14 @@
     background-color: #fff;
    }
 
-   .container{
-    grid-template-columns: 1fr 1fr 1fr;
+   .card-h{
+    grid-template-columns: 50% 1fr 1fr;
+   }
+
+   
+   .cards-header{
+    text-align: left;
+    padding-left: 10px;
    }
 
 }
