@@ -155,16 +155,14 @@ section h3{
     font-size: 1.5rem;
 }
 
-section p {
+#cards p {
     font-weight: 600;
     font-size: smaller;
 }
 
 section a {
-    font-family: "Roboto";
     font-size: 0.85rem;
-    color: navy;
-    letter-spacing: 1.1pt;
+    color: black;
 }
 
 img{
@@ -262,8 +260,9 @@ img{
 /* EVENTS AND WEATHER STYLES  */
 .card-h{
     display: grid;
-    width: 95%;
-    margin: 1rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr, 1fr));
+    /* width: 100%; */
+    margin: 1rem 0;
     margin-top: 0;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
@@ -287,3 +286,21 @@ img{
     width: 100%;
 }
 
+figure {
+    background-color: #fff;
+}
+
+
+.divide{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#weather-icon{
+    height: 100px;
+    /* width: 100%; */
+}
+
+.current-weather{
+    padding: 1rem .5rem 1rem .5rem;
+}

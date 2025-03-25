@@ -32,7 +32,8 @@ const displayCompanies = (companies) => {
         let name = document.createElement('h2')
         let email = document.createElement('p')
         let phone = document.createElement('p')
-        let url = document.createElement('p')
+        let urlp = document.createElement('p')
+        let url = document.createElement('a')
         let portrait =  document.createElement('img')
 
         // Build the h2 content out to show the company's name
@@ -46,12 +47,14 @@ const displayCompanies = (companies) => {
         portrait.setAttribute('loading', 'lazy')
         // portrait.setAttribute('width', '')
         // portrait.setAttribute('height', '440')
+        url.setAttribute('href', company.websiteurl)
 
         // Append the section(card) with the created elements
         card.appendChild(name)
         card.appendChild(portrait)
         // card.appendChild(email)
-        card.appendChild(url)
+        card.appendChild(urlp)
+        urlp.appendChild(url)
         card.appendChild(phone)
 
         cards.appendChild(card)

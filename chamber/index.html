@@ -54,23 +54,26 @@
         <h1>Home</h1>
 
         <section class="card-h" id="card-h">
-            <div class="events">
-                <h2 class="cards-header">Events</h2>
+            <div class="events" aria-label="events">
+                <h2 class="cards-header" aria-label="events" role="contentinfo">Events</h2>
                 <p>This is a workshop we will have!</p>
             </div>
             <div class="cweather">
                 <h2 class="cards-header">Current Weather</h2>
-                <span id="current-temp"></span>
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-                <p id="highest-temp"></p>
-                <p id="lowest-temp"></p>
-                <p id="humidity"></p>
-                <p id="sunrise"></p>
-                <p id="sunset"></p>
-                <img src="" alt="" class="weather-icon">
+                <div class="divide">
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                    </figure>
+                    <div class="current-weather">
+                        <span id="current-temp"></span>
+                        <figcaption></figcaption>
+                        <p id="highest-temp"></p>
+                        <p id="lowest-temp"></p>
+                        <p id="humidity"></p>
+                        <p id="sunrise"></p>
+                        <p id="sunset"></p>
+                    </div>
+                </div>
             </div>
             <div class="forecast">
                 <h2 class="cards-header">Weather Forecast</h2>

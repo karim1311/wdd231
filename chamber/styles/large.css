@@ -35,6 +35,8 @@
 
    .card-h{
     grid-template-columns: 50% 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr, 1fr));
+
    }
 
    
