@@ -1,4 +1,5 @@
 const currentTemp = document.querySelector('#current-temp')
+let currentTempForecast = document.querySelector('.current-temp')
 const weatherIcon = document.querySelector('#weather-icon')
 const captionDesc = document.querySelector('figcaption')
 const highestTemp = document.querySelector('#highest-temp')
@@ -34,6 +35,7 @@ apiFetch()
 
 function displayResults(data) {
     currentTemp.innerHTML = `<strong>${Math.round(data.main.temp)}&deg;</strong> C`
+    currentTempForecast.innerHTML = `<strong>${Math.round(data.main.temp)}&deg; C</strong>`
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`
     weatherIcon.setAttribute('src', iconsrc)
     weatherIcon.setAttribute('alt', data.weather[0].description)
