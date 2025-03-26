@@ -302,5 +302,17 @@ figure {
 }
 
 .current-weather{
-    padding: 1rem .5rem 1rem .5rem;
+    padding: 1rem .5rem .5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: start;
+    text-transform: capitalize;
+}
+
+.forecast-text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: start;
 }

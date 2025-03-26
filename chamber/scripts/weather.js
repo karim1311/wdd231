@@ -8,6 +8,10 @@ const sunrise = document.querySelector('#sunrise')
 const sunset = document.querySelector('#sunset')
 
 
+// forecast
+const forecastCard = document.querySelector('.forecast-text')
+
+
 async function apiFetch() {
     try {
         // openweatherapi url
@@ -16,7 +20,7 @@ async function apiFetch() {
         const response = await fetch(url)
         if(response.ok) {
             const data = await response.json()
-            // console.log(data)
+            console.log(data)
             displayResults(data)
         } else {
             throw Error(await response.text())
@@ -37,8 +41,14 @@ function displayResults(data) {
     highestTemp.innerHTML = `High: ${Math.round(data.main.temp_max)}&deg;`
     lowestTemp.innerHTML = `Low: ${Math.round(data.main.temp_min)}&deg;`
     humidity.innerHTML = `Humidity: ${data.main.humidity}%`
-    sunrise.innerHTML = `Sunrise: `
-    sunset.innerHTML = `Sunset:`
+
+    let sr = new Date(data.sys.sunrise * 1000).toLocaleTimeString("en-MX")
+
+    let s = new Date(data.sys.sunset * 1000).toLocaleTimeString("en-MX")
+    
+    sunrise.innerHTML = `Sunrise: ${sr.substring(0,4)}am`
+    sunset.innerHTML = `Sunset: ${s.substring(0,4)}pm`
+
 }
 
 
@@ -50,7 +60,16 @@ async function hourlyForecast() {
         if (response.ok) {
             const data = await response.json()
             console.log(data)
-            // displayForecast(data)
+            let uniqueForecastDays = []
+            let fiveDaysForecast = data.list.filter(forecast => {
+                let forecastDate = new Date(forecast.dt_txt).getDate()
+                if(!uniqueForecastDays.includes(forecastDate) && uniqueForecastDays.length<=1){
+                    return uniqueForecastDays.push(forecastDate)
+                }
+            })
+
+            displayForecast(fiveDaysForecast)
+            console.log(fiveDaysForecast)
         } else {
             throw Error(await response.text())
         }
@@ -61,13 +80,20 @@ async function hourlyForecast() {
 
 hourlyForecast()
 
-const displayForecast = (days) => {
-    days.forEach((dayOfWeek) => {
+let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+const displayForecast = (forecastDays) => {
+    forecastDays.forEach((forecastDay) => {
+        let date = new Date(forecastDay.dt_txt).getDay()
         // create elements to add to the card element
         let day =  document.createElement('p')
         let temp =  document.createElement('span')
 
 
-        day.textContent = `${dayOfWeek}`
+        day.textContent = `${weekdays[date]}: `
+        temp.innerHTML = `<strong>${Math.round(forecastDay.main.temp)}&deg;C</strong>`
+        forecastCard.appendChild(day)
+        day.appendChild(temp)
+
     })
 }
