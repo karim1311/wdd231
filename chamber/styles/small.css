@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     box-sizing: border-box;
 }
 
@@ -18,6 +18,8 @@ header{
 /* NAVIGATION STUFF HERE */
 nav{
     background-color: #154e13;
+    padding: 0;
+    margin: 0;
 }
 
 #myButton::before{
@@ -303,4 +305,138 @@ figure {
 
 .current-weather{
     padding: 1rem .5rem 1rem .5rem;
+}
+
+
+
+
+form {
+    margin: 1rem 2%;
+
+    label {
+        display: block;
+        font-size: .8rem;
+        color: purple;
+        padding-top: .2rem;
+    }
+
+    h3{
+        font-size: .9rem;
+        color: #E07A5F;
+        margin: 1.5rem 0 .2rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    input[type=text],
+    input[type=tel],
+    input[type=date],
+    input[type=email],
+    input[type=textarea],
+    select {
+        display: block;
+        margin: .1rem 0 1rem 0;
+        padding: .3rem;
+        border: 1px solid #999;
+        border-radius: 4px;
+        border-left-width: 5px;
+        border-left-color: #555;
+        font-size: 1rem;
+        color: #3d405B;
+        width: 250px;
+    }
+
+    input:required {border-left-color: #d70000}
+    input:focus {border-left-color: black; outline:none}
+    input:required:valid{border-left-color: green}
+
+    input[type=submit]{
+        border: none;
+        text-align: center;
+        background-color: #3D405B;
+        color: white;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+}
+input:-webkit-autofill{
+    -webkit-text-fill-color: #3D405B;
+}
+
+#results{
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+}
+
+/* MEMBERSHIP CARDS */
+/* parent element  */
+#showHere{
+    display: flex;
+    /* grid-template-columns: auto; */
+    flex-direction: column;
+    /* max-height: 15rem; */
+    /* justify-content: space-between; */
+    gap: 1rem;
+}
+/* cards */
+.membership{
+    border: 1px solid ;
+    border-radius: .5rem;
+    height: 4rem;
+    align-content: center;
+    text-align: center;
+    background: lightgray;
+    /* background-color: #1d3557; */
+}
+
+.membership p {
+    margin: 0;
+    padding: 0;
+}
+
+.name{
+    text-align: center;
+}
+
+.learn-more{
+    text-align: center;
+    height: 1.5rem;
+}
+
+#mydialog div{
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: #ddd;
+    padding: 5px;
+    border-bottom: #aaa 1px solid;
+}
+
+#mydialog h2{
+    margin:0;
+    color: #275690;
+}
+
+#mydialog button {
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #aaa;
+}
+
+#mydialog p{
+    padding: 10px;
+    color: #375170;
+}
+
+::backdrop{
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+textarea{
+    height: 50px;
 }

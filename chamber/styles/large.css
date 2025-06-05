@@ -45,4 +45,13 @@
     padding-left: 10px;
    }
 
+   .column{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    }
+
+    .designOne{
+        max-width: 350px;
+    }
+
 }

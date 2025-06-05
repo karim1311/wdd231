@@ -98,42 +98,52 @@ wdd.addEventListener("click",()=>{
     createCourseCard(courses.filter(course=>course.subject == 'WDD'))
 })
 
-// large.addEventListener("click",()=>{
-//     createTempleCard(courses.filter(temple=>temple.area>90000))
-// })
-
-// small.addEventListener("click",()=>{
-//     createTempleCard(courses.filter(temple=>temple.area<10000))
-// })
-
 
 function createCourseCard(filteredCourses){
     document.querySelector(".container").innerHTML = ""
     filteredCourses.forEach(course=>{
         let card = document.createElement("section")
-        // let name = document.createElement("h3")
         let name = document.createElement("p")
         let complete = document.createElement("p")
-        // let area = document.createElement("p")
-        // let img = document.createElement("img")
+
 
         // name.textContent = course.courseName
         name.innerHTML = `<span class="label"></span> ${course.subject} ${course.number} ${course.completed ? '✅' : '❌'}`
       
 
-        // card.appendChild(name)
         card.appendChild(name)
-        card.appendChild(complete)
-        // card.appendChild(area)
-        // card.appendChild(img)
-        // const label = document.querySelector('#label')
+        // card.appendChild(complete)
+        
         if (course.completed == true){
             card.classList.toggle('completed')
         }
 
         document.querySelector(".container").appendChild(card)
+
+        card.addEventListener('click', () => {
+            displayCourseDetails(course)
+        })
     })
 
 
   
+}
+
+function displayCourseDetails(course) {
+    let courseDetails = document.getElementById('dialog')
+    courseDetails.innerHTML = ''
+    courseDetails.innerHTML = `
+    <button id="closeModal" X</button>
+    <h2>${course.subject} ${course.number} </h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal()
+
+    closeModal.addEventListener("click", () => {
+        courseDetails.close()
+    })
 }
