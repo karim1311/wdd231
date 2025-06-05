@@ -304,9 +304,15 @@ figure {
 }
 
 .current-weather{
-    padding: 1rem .5rem 1rem .5rem;
+    padding: 1rem .5rem .5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: start;
+    text-transform: capitalize;
 }
 
+<<<<<<< HEAD
 
 
 
@@ -439,4 +445,11 @@ input:-webkit-autofill{
 
 textarea{
     height: 50px;
+=======
+.forecast-text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: start;
+>>>>>>> 7d15e620c6ac2871197e4bcc378f7bced4b7a580
 }
