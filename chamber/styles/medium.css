@@ -12,4 +12,10 @@
     #allplaces div img{
         width: 300px;
     }
+
+    #allplaces div:hover{
+        background-color: lightskyblue;
+        /* font-size: 20px; */
+
+    }
 }
