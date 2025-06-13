@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Loan</title>
+    <meta name="description" content="Chamber of commerce Directory">
+    <meta name="author" content="Karim Valenzuela">
+    <meta property="og:title" content="WDD231 Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://karim1311.github.io/wdd231/images/culiacanmetaimage.webp">
+    <meta property="og:image:width" content="480">
+    <meta property="og:image:height" content="270">
+    <meta property="og:url" content="https://karim1311.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/join.js" defer type="module"></script>
+    <script src="./scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="" alt="">
+        <span>Company Name Here</span>
+        <button id="myButton"></button>
+    </header>
+
+    <nav id="animateme">
+        <ul class="menuLinks">
+            <li><a href="./index.html" title="Home">Home</a></li>
+            <li class="current-menu-item"><a href="./directory.html">Directory</a></li>
+            <li><a href="./discover.html" title="Discover">Discover</a></li>
+            <li><a href="#" title="History">Page Four</a></li>
+            <li class=""><a href="./join.html" class="join-now-btn">Join now</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Loan</h1>
+        <p>This site is call individual loan, for it aims to help a loan website to create clients, create loans and create payments on those loans.</p>
+        <p>Scenario Question 1: Where i can keep track of my clients?</p>
+        <p>Scenario Question 2: How can I improve my personal loan business?</p>
+        <p>Colors:  </p>
+        <p id="red" > persian-red: #C14139ff</p>
+        <p id="blue"> celestial-blue: #009CFDff</p>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event,'clients')">Clients</button>
+            <button class="tablinks" onclick="openTab(event,'loans')" id="defaultOpen">Generate Loan</button>
+            <button class="tablinks" onclick="openTab(event,'payments')">Payments</button>
+
+        </div>
+        
+        <div id="clients" class="tabcontent">
+            <h3>Clients</h3>
+            <p>Here goes all loan clients</p>
+
+            <div id="showHere"></div>
+        
+            <!-- One single dialog for all temples -->
+            <dialog id="mydialog">
+                <div>
+                    <h2></h2>
+                    <button>X</button>
+                </div>
+                <p></p>
+            </dialog>
+
+        </div>
+
+        <section id="loans" class="column tabcontent">
+            <form method="GET" action="thankyou.html" class="designOne">
+                <h2>Create Loan Form</h2>
+                <label>Client ID <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Client <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Loan Type <input type="text" name="title" autocomplete="organization-title" title="Your Organization Title" pattern="[A-Za-z\s\-]{7,}"></label>
+                <label>Amount <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+                <label>Payments <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+                <label> Protection<input type="text" name="organization" required autocomplete="organization" title="Your Organization"></label>
+                <label>First Payment <input type="date" name="businessdescription" required autocomplete="organization" title="Business Description" height="30" width="30"></label>
+                
+                
+                <input type="hidden" name="timestamp" id="timestamp">
+    
+    
+                <input type="submit" value="Generate Loan">
+            </form>
+    
+            
+
+        </section>
+
+        <div id="payments" class="tabcontent">
+            <h3>Payments</h3>
+            <p>Here goes all loan payments</p>
+
+        </div>
+
+
+        
+    </main>
+
+    <footer>
+        <p>WDD231 Class Project</p>
+        <p>Karim Valenzuela</p>
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
+
