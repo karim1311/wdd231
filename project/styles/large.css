@@ -1,0 +1,67 @@
+@media only screen and (min-width:64rem) {
+    #myButton{
+        display: none;
+    }
+
+    ul.menuLinks, ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav{
+        grid-template-rows: 1fr;
+    }
+
+    /* main */
+   main{
+    /* display: grid; */
+    grid-template-columns: 1.25fr .75fr;
+   }
+
+   .border{
+    border-radius: 8px;
+    box-shadow: 0 0 1.5rem #333;
+
+   }
+
+   .certificate{
+    grid-column: 1/3;
+    background-color: #fff;
+   }
+
+   .card-h{
+    grid-template-columns: 50% 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr, 1fr));
+
+   }
+
+   
+   .cards-header{
+    text-align: left;
+    padding-left: 10px;
+   }
+
+   .column{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    }
+
+    .designOne{
+        max-width: 350px;
+    }
+
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #allplaces div img {
+        height: 100%;
+        width: 100%;
+    }
+
+}

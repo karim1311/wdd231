@@ -13,8 +13,6 @@
 --mint: #74CCA8ff;
 }
 
-
-
 header, footer{
     background-color: #bbb;
     padding: 1rem;
@@ -509,43 +507,6 @@ textarea{
     grid-area: button;
 }
 
-/* style the tab */
-.tab{
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-/* style the buttons inside the tab */
-.tab button{
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change the background colors of buttons on hover */
-.tab button:hover{
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active{
-    background-color: #ccc;
-}
-
-/* style the tab content */
-.tabcontent{
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
 
 /* PROJECT */
 
@@ -571,47 +532,8 @@ textarea{
 }
 
 /* CSS HEX */
---gamboge: #EA9600ff;
+/* --gamboge: #EA9600ff;
 --persian-red: #C14139ff;
 --celestial-blue: #009CFDff;
 --viridian: #459373ff;
---mint: #74CCA8ff;
-
-/* CSS HSL */
---gamboge: hsla(38, 100%, 46%, 1);
---persian-red: hsla(4, 54%, 49%, 1);
---celestial-blue: hsla(203, 100%, 50%, 1);
---viridian: hsla(155, 36%, 42%, 1);
---mint: hsla(155, 46%, 63%, 1);
-
-/* SCSS HEX */
-$gamboge: #EA9600ff;
-$persian-red: #C14139ff;
-$celestial-blue: #009CFDff;
-$viridian: #459373ff;
-$mint: #74CCA8ff;
-
-/* SCSS HSL */
-$gamboge: hsla(38, 100%, 46%, 1);
-$persian-red: hsla(4, 54%, 49%, 1);
-$celestial-blue: hsla(203, 100%, 50%, 1);
-$viridian: hsla(155, 36%, 42%, 1);
-$mint: hsla(155, 46%, 63%, 1);
-
-/* SCSS RGB */
-$gamboge: rgba(234, 150, 0, 1);
-$persian-red: rgba(193, 65, 57, 1);
-$celestial-blue: rgba(0, 156, 253, 1);
-$viridian: rgba(69, 147, 115, 1);
-$mint: rgba(116, 204, 168, 1);
-
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #EA9600ff, #C14139ff, #009CFDff, #459373ff, #74CCA8ff);
-$gradient-right: linear-gradient(90deg, #EA9600ff, #C14139ff, #009CFDff, #459373ff, #74CCA8ff);
-$gradient-bottom: linear-gradient(180deg, #EA9600ff, #C14139ff, #009CFDff, #459373ff, #74CCA8ff);
-$gradient-left: linear-gradient(270deg, #EA9600ff, #C14139ff, #009CFDff, #459373ff, #74CCA8ff);
-$gradient-top-right: linear-gradient(45deg, #EA9600ff, #C14139ff, #009CFDff, #459373ff, #74CCA8ff);
-$gradient-bottom-right: linear-gradient(135deg, #EA9600ff, #C14139ff, #009CFDff, #459373ff, #74CCA8ff);
-$gradient-top-left: linear-gradient(225deg, #EA9600ff, #C14139ff, #009CFDff, #459373ff, #74CCA8ff);
-$gradient-bottom-left: linear-gradient(315deg, #EA9600ff, #C14139ff, #009CFDff, #459373ff, #74CCA8ff);
-$gradient-radial: radial-gradient(#EA9600ff, #C14139ff, #009CFDff, #459373ff, #74CCA8ff);
+--mint: #74CCA8ff; */

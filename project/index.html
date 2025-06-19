@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Loan</title>
+    <meta name="description" content="Chamber of commerce Directory">
+    <meta name="author" content="Karim Valenzuela">
+    <meta property="og:title" content="WDD231 Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://karim1311.github.io/wdd231/images/culiacanmetaimage.webp">
+    <meta property="og:image:width" content="480">
+    <meta property="og:image:height" content="270">
+    <meta property="og:url" content="https://karim1311.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/animation.css">
+    <!-- <link rel="stylesheet" href="styles/project.css"> -->
+    <script src="./scripts/script.js" defer></script>
+    <!-- <script src="./scripts/join.js" defer type="module"></script> -->
+    <script src="./scripts/project.js" defer></script>
+    <!-- <script src="./scripts/join.js" defer></script> -->
+    <script src="./scripts/clients.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="" alt="">
+        <span>Company Name Here</span>
+        <button id="myButton"></button>
+    </header>
+
+    <nav id="animateme">
+        <ul class="menuLinks">
+            <li><a href="./index.html" title="Home">Clients</a></li>
+            <li class="current-menu-item"><a href="./loan.html">Generate Loan</a></li>
+            <li><a href="./payments.html" title="Discover">Payments</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Clients</h1>
+        <p>This site is call individual loan, for it aims to help a loan website to create clients, create loans and create payments on those loans.</p>
+        <p>Scenario Question 1: Where i can keep track of my clients?</p>
+        <p>Scenario Question 2: How can I improve my personal loan business?</p>
+        <p>Colors:  </p>
+        <p id="red" > persian-red: #C14139ff</p>
+        <p id="blue"> celestial-blue: #009CFDff</p>
+
+
+        <section id="clients" class="column">
+            <form method="GET" action="#" id="formClient" class="designOne">
+                <h2>Create Client Form</h2>
+                <!-- <label>Client ID <input type="text" name="id" required autocomplete="given-name" title="Client ID"></label> -->
+                <label>Client <input type="text" name="name" id="name" required autocomplete="name" title="Client Name"></label>
+                <label>Phone <input type="text" name="phone" id="phone" required placeholder="123-456"  title="phone" autocomplete="tel"></label>
+                
+                <input type="hidden" name="timestamp" id="timestamp">
+    
+    
+                <input type="submit" value="Create Client">
+            </form>
+
+             <!-- <div id="showHere"></div> -->
+        
+            <!-- One single dialog for all temples -->
+            <dialog id="mydialog">
+                <div>
+                    <h2></h2>
+                    <button>X</button>
+                </div>
+                <p></p>
+                <p id="status"></p>
+            </dialog>
+    
+            
+
+        </section>
+        
+        <div id="clients" class="">
+            <h3>Clients</h3>
+            <p>Here goes all loan clients</p>
+
+            <div id="showHere"></div>
+        
+            <!-- One single dialog for all temples -->
+            <dialog id="mydialog">
+                <div>
+                    <h2></h2>
+                    <button>X</button>
+                </div>
+                <p></p>
+            </dialog>
+
+        </div>
+
+
+        
+    </main>
+
+    <footer>
+        <p>WDD231 Class Project</p>
+        <p>Karim Valenzuela</p>
+        <p><span id="currentyear"></span></p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
+

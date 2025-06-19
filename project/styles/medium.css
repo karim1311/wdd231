@@ -1,0 +1,21 @@
+@media only screen and (min-width: 38rem) {
+
+    #allplaces div {
+   
+    grid-template-areas: 
+    "photo name"
+    "photo description"
+    "photo location"
+    "photo button";
+    }
+
+    #allplaces div img{
+        width: 300px;
+    }
+
+    #allplaces div:hover{
+        background-color: lightskyblue;
+        /* font-size: 20px; */
+
+    }
+}

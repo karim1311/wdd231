@@ -1,0 +1,15 @@
+.membership{
+    animation: .5s linear 0s sunrise;
+}
+
+@keyframes sunrise{
+    from{
+        /* pushes the sun down past the viewport */
+        transform: translateY(10vh);
+    }
+
+    to{
+        /* returns the sun to its default position */
+        transform: translateY(0)
+    }
+}
